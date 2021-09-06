@@ -9,6 +9,7 @@ import (
 func main() {
 
 	engine := html.New("./templates", ".html")
+	engine.Delims("${", "}")
 
 	app := fiber.New(fiber.Config{
 		Views: engine,
@@ -22,8 +23,6 @@ func main() {
 }
 
 func index(c *fiber.Ctx) error {
-	return c.Render("index", fiber.Map{
-		"message": "hello vue js!",
-	})
+	return c.Render("index", nil)
 
 }
