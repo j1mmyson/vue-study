@@ -1,4 +1,4 @@
-module github.com/j1mmyson/vueStudy
+module github.com/j1mmyson/vueStudy/basics
 
 go 1.16
 
