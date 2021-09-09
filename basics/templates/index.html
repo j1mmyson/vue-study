@@ -5,65 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <title>Let's Vue</title>
+    <title>Main Page</title>
 </head>
 <body>
-    <h2>Passing Variables</h2>
-    <hr>
-    <div id="app">
+    <div id="search">
         {{ message }}
     </div>
+
     
-    <h2>Binding Attributes</h2>
-    <hr>
-    <div id="app-2">
-        <span v-bind:title="message">
-            Cursoring me
-        </span>
-    </div>
-
-    <h2>If Clause</h2>
-    <hr>
-    <div id="app-3">
-        <p v-if="tf">Can you see me?</p>
-    </div>
-
-    <h2>For Loop</h2>
-    <hr>
-    <div id="app-4">
-        <ul>
-           <li v-for="todo in todos">
-                {{ todo.title }}
-           </li> 
-        </ul>
-    </div>
-
-    <h2>Event Handling</h2>
-    <hr>
-    <div id="app-5">
-        <p> {{ message }} </p>
-        <button @click="reverseMessage">Reverse Text</button>
-    </div>
-
-    <h2>Interactive Binding</h2>
-    <hr>
-    <div id="app-6">
-        <input v-model="message">
-        <button @click="someAction">Click!</button>
-    </div>
-
-    <h2>Component</h2>
-    <div id="app-7">
-        <ol>
-            <todo-item
-                v-for="item in groceryList"
-                v-bind:todo="item"
-                v-bind:key="item.id"
-            ></todo-item>
-        </ol>
-
-    </div>
-
-    <script src="../static/index.js"></script>
 </body>
 </html>
